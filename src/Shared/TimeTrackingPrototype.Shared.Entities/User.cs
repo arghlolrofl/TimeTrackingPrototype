@@ -9,6 +9,7 @@ namespace TimeTrackingPrototype.Shared.Entities {
   public class User : EntityBase {
     private string _lastName;
     private string _firstName;
+    private UserGroup _userGroup;
 
 
     public string FirstName {
@@ -20,5 +21,12 @@ namespace TimeTrackingPrototype.Shared.Entities {
       get { return _lastName; }
       set { _lastName = value; RaisePropertyChanged(); }
     }
+    
+    public virtual UserGroup UserGroup
+    {
+      get { return _userGroup; }
+      set { _userGroup = value; }
+    }
+
   }
 }

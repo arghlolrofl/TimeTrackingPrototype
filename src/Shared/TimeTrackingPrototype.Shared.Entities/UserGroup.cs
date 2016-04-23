@@ -9,6 +9,7 @@ namespace TimeTrackingPrototype.Shared.Entities {
   public class UserGroup : EntityBase {
     private string _description;
     private string _name;
+    private ICollection<User> _users;
 
 
     public string Name {
@@ -19,6 +20,12 @@ namespace TimeTrackingPrototype.Shared.Entities {
     public string Description {
       get { return _description; }
       set { _description = value; RaisePropertyChanged(); }
+    }
+
+    public virtual ICollection<User> Users
+    {
+      get { return _users; }
+      set { _users = value; }
     }
 
   }
