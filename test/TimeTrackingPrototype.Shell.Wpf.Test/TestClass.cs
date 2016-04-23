@@ -12,6 +12,7 @@ namespace TimeTrackingPrototype.Shell.Wpf.Test {
     public void TestMethod1() {
       Assert.Pass("My first passing test");
     }
+    // scheiße der TS ist down :D
 
     //[Test]
     //public void TestMethod2() {
